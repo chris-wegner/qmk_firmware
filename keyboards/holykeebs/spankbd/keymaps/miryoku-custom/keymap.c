@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+------+------|      |------+------+------+------+------|
      * | GUI-A| ALT-S|CTRL-D|SHFT-F|   G  |      |   H  |SHFT-J|CTRL-K| ALT-L| GUI-'|
      * |------+------+------+------+------|      |------+------+------+------+------|
-     * |     Z|   X  |   C  |   V  |   B  |      |   N  |   M  |   ,  |   .  |   /  |
+     * |   Z  |   X  |   C  |   V  |   B  |      |   N  |   M  |   ,  |   .  |   /  |
      * `----------------------------------'      `----------------------------------'
      *     .------------------------------.      .-----------------------------.
      *     |ADJST-TAB|SYMBL-BSPC|NUMBR-SPC|      |NAVIG-RTN|MOUSE-DEL|MEDIA-ESC|
@@ -93,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [_SYMBOLS] = LAYOUT_split_3x5_3(
       KC_GRV,  KC_AMPR, KC_ASTR, KC_MINS, KC_NO,    KC_NO, KC_UNDS, KC_LT,   KC_GT,   KC_TILD, 
-      KC_COLN, KC_DLR,  KC_CIRC, KC_CIRC, KC_EQL,   KC_NO, KC_LPRN, KC_LCBR, KC_LBRC, KC_SCLN, 
+      KC_COLN, KC_DLR,  KC_PERC, KC_CIRC, KC_EQL,   KC_NO, KC_LPRN, KC_LCBR, KC_LBRC, KC_SCLN, 
       KC_PIPE, KC_EXLM, KC_AT,   KC_HASH, KC_NO,    KC_NO, KC_RPRN, KC_RCBR, KC_RBRC, KC_BSLS,
                         KC_NO,   KC_NO,   KC_NO,    KC_NO, KC_NO,   KC_NO
     ),
@@ -101,9 +101,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Keymap 3: Number layer
      *
      * ,----------------------------------.      ,-------------------------------------.
-     * |      |   7  |   8  |   9  |   *  |      |      |DM_REC1|DM_REC2|       |      |
+     * |   /  |   7  |   8  |   9  |   *  |      |      |DM_REC1|DM_REC2|       |      |
      * |------+------+------+------+------|      |------+-------+-------+-------+------|
-     * |      |   4  |   5  |   6  |   -  |      |      |DM_PLY1|DM_PLY2|DM_RSTP|      |
+     * |   .  |   4  |   5  |   6  |   -  |      |      |DM_PLY1|DM_PLY2|DM_RSTP|      |
      * |------+------+------+------+------|      |------+-------+-------+-------+------|
      * |   0  |   1  |   2  |   3  |   +  |      |      |       |       |       |      |
      * `----------------------------------'      `-------------------------------------'
@@ -112,10 +112,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *               '--------------------'      '--------------------'
      */
     [_NUMBER] = LAYOUT_split_3x5_3(
-      KC_NO, KC_7, KC_8,  KC_9,  KC_ASTR,   KC_NO, DM_REC1, DM_REC2, KC_NO,   KC_NO, 
-      KC_NO, KC_4, KC_5,  KC_6,  KC_PMNS,   KC_NO, DM_PLY1, DM_PLY2, DM_RSTP, KC_NO, 
-      KC_0,  KC_1, KC_2,  KC_3,  KC_PPLS,   KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO, 
-                   KC_NO, KC_NO, KC_NO,     KC_NO, KC_NO,   KC_NO
+      KC_SLSH, KC_7, KC_8,  KC_9,  KC_ASTR,   KC_NO, DM_REC1, DM_REC2, KC_NO,   KC_NO, 
+      KC_DOT,  KC_4, KC_5,  KC_6,  KC_PMNS,   KC_NO, DM_PLY1, DM_PLY2, DM_RSTP, KC_NO, 
+      KC_0,    KC_1, KC_2,  KC_3,  KC_PPLS,   KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO, 
+                     KC_NO, KC_NO, KC_NO,     KC_NO, KC_NO,   KC_NO
     ),
 
     /* Keymap 4: Mouse layer
