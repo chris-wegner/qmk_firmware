@@ -11,3 +11,7 @@ This is the c configuration file for the Chris Wegner's custom Miryoku keymap
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define PERMISSIVE_HOLD
+
+// Old before shorted out pin
+// #define SERIAL_USART_TX_PIN GP1
+#define SERIAL_USART_TX_PIN GP0
