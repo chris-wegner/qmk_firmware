@@ -28,7 +28,9 @@
 #endif
 
 #ifdef SPLIT_KEYBOARD
-    #define SERIAL_USART_TX_PIN GP1
+    // Old before shorted pin.
+    // #define SERIAL_USART_TX_PIN GP1
+    #define SERIAL_USART_TX_PIN GP0
 
     // This helps in setups where the keyboard isn't recognized on boot if it's already plugged in.
     #define SPLIT_WATCHDOG_ENABLE
